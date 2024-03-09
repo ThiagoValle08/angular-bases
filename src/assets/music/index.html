@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproducción automática de audio con interacción del usuario</title>
+</head>
+
+<body>
+
+    <!-- Botón que desencadenará la reproducción automática -->
+    <button onclick="playAudio()">Reproducir audio</button>
+
+    <audio id="miAudio" controls>
+        <source src="./HIMNO UEFA CHAMPIONS LEAGUE + LETRA (320 kbps).mp3" type="audio/mp3">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+
+    <script>
+        // Función para reproducir el audio
+        function playAudio() {
+            var audio = document.getElementById("miAudio");
+            audio.play();
+        }
+    </script>
+
+</body>
+
+</html>
